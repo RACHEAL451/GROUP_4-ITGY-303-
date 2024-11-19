@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .registration-form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        .registration-form h1 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .registration-form input, .registration-form select, .registration-form button {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .registration-form button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .registration-form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form class="registration-form" action="register.php" method="POST">
+        <h1>Event Registration</h1>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <select name="event" required>
+            <option value="">Choose an Event</option>
+            <option value="Event A">Event A</option>
+            <option value="Event B">Event B</option>
+            <option value="Event C">Event C</option>
+        </select>
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
